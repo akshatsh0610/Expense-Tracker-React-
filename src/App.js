@@ -5,7 +5,6 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <h1>Expense Tracker App</h1>
     </>
   );
 }
