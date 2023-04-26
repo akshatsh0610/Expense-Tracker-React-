@@ -1,13 +1,8 @@
-import Container from 'react-bootstrap/Container';
-import Navbar from "./components/Navbar";
-
-
+import React from "react";
+import NavBar from "./components/NavBar";
 function App() {
   return (
-    <Container>
-      <Navbar></Navbar>
-    </Container>
+    <NavBar></NavBar>
   );
 }
-
 export default App;
