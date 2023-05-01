@@ -17,6 +17,7 @@
 body{
     transition: background 0.2s linear;
     cursor: pointer;
+    text-align: center;
 }
 
 body.dark {
@@ -87,4 +88,8 @@ color: pink;
 
 .fa-sun {
 color: yellow;
+}
+
+.main{
+    margin-top: 8rem;
 }
