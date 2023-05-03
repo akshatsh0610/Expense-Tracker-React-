@@ -14,13 +14,13 @@
     box-sizing: border-box;
 }
 
-body{
+.light-theme{
     transition: background 0.2s linear;
     cursor: pointer;
-    text-align: center;
+    /* text-align: center; */
 }
 
-body.dark {
+.dark-theme {
     color: aliceblue;
     background-color: #1c1c1c;
 }
@@ -92,4 +92,8 @@ color: yellow;
 
 .main{
     margin-top: 8rem;
+}
+
+.total{
+    color: #666;
 }

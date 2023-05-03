@@ -1,21 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import '../style.css'
 function Navbar(){
-    const [darkmode,setdarkmode]=useState(false);
+    const [darkmode,setdarkmode]=useState("light-theme");
     function fun(){
-        if(darkmode===false)
+        if(darkmode==='light-theme')
         {
-            document.body.classList.toggle('dark');
             document.querySelector('.logo').classList.toggle('dark');
-            setdarkmode(true)
+            setdarkmode('dark-theme')
         }
         else{
-            document.body.classList.remove('dark');
             document.querySelector('.logo').classList.remove('dark');
-            setdarkmode(false)
+            setdarkmode('light-theme')
         }
         console.log(darkmode)
     }
+    useEffect(()=>{
+        document.body.className=darkmode;
+    },[darkmode])
     return(
         <header>
             <h1><i className="fa solid fa-coins logo"></i> Expense Tracker</h1>
