@@ -7,7 +7,7 @@ const Header=styled(Typography)`
     text-transform:uppercase;
 `
 
-function NavBar(){
+function Navbar(){
     return(
         <>
             <Header>Expense Tracker</Header>
@@ -15,4 +15,4 @@ function NavBar(){
     )
 }
 
-export default NavBar;
+export default Navbar;
